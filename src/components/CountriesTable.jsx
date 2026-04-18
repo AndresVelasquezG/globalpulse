@@ -1,4 +1,4 @@
-import './CountriesTable.css'
+import './countriestable.css'
 import { useCountries } from '../hooks/useCountries'
 import Loader from './Loader'
 

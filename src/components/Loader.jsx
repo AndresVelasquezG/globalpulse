@@ -1,4 +1,4 @@
-import './Loader.css'
+import './loader.css'
 
 function Loader({ message = 'Cargando datos...' }) {
   return (

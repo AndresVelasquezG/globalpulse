@@ -6,7 +6,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from 'recharts'
-import './ContinentsChart.css'
+import './continentschart.css'
 
 const data = [
   { name: 'Asia', value: 4753 },

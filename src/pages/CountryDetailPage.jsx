@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from 'react-router-dom'
 import { useCountry } from '../hooks/useCountry'
 import Loader from '../components/Loader'
-import './CountryDetailPage.css'
+import './countrydetailpage.css'
 
 const regionColors = {
   Asia: '#7c6af7',

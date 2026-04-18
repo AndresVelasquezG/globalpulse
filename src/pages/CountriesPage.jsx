@@ -2,7 +2,7 @@ import { useState, useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useCountries } from '../hooks/useCountries'
 import Loader from '../components/Loader'
-import './CountriesPage.css'
+import './countriespage.css'
 
 const regions = ['Todas', 'Africa', 'Americas', 'Asia', 'Europe', 'Oceania']
 

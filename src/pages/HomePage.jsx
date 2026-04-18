@@ -6,7 +6,7 @@ import CountriesTable from '../components/CountriesTable'
 import Loader from '../components/Loader'
 import { useStats } from '../hooks/useStats'
 import { formatPopulation } from '../utils/formatNumbers'
-import './HomePage.css'
+import './homepage.css'
 
 function HomePage() {
   const { stats, loading, error } = useStats()
