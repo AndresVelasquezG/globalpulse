@@ -1,6 +1,6 @@
 import Sidebar from './Sidebar'
 import TopBar from './TopBar'
-import './MainLayout.css'
+import './mainlayout.css'
 
 function MainLayout({ children }) {
   return (
