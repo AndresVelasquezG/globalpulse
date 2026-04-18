@@ -1,6 +1,6 @@
 import { useLocation } from 'react-router-dom'
 import { useThemeContext } from '../../context/ThemeContext'
-import './TopBar.css'
+import './topbar.css'
 
 const pageTitles = {
   '/': { title: 'Dashboard Global', subtitle: 'Resumen del mundo en tiempo real' },
