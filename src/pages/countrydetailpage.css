@@ -1,0 +1,180 @@
+.detail-page {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.detail-back {
+  background: transparent;
+  border: 1px solid #1e1e4a;
+  color: #94a3b8;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.88rem;
+  width: fit-content;
+  transition: all 0.2s ease;
+}
+
+.detail-back:hover {
+  background-color: #1e1e4a;
+  color: #ffffff;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 28px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .detail-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Columna izquierda */
+.detail-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.detail-flag {
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid #1e1e4a;
+  object-fit: cover;
+}
+
+.detail-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.detail-name {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.detail-official {
+  font-size: 0.88rem;
+  color: #64748b;
+}
+
+.detail-region-badge {
+  display: inline-block;
+  background-color: color-mix(in srgb, var(--region-color) 15%, transparent);
+  color: var(--region-color);
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  width: fit-content;
+}
+
+/* Columna derecha */
+.detail-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.detail-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.detail-stat {
+  background-color: #0f0f2d;
+  border: 1px solid #1e1e4a;
+  border-radius: 14px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.detail-stat-icon {
+  font-size: 1.5rem;
+}
+
+.detail-stat-label {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin-bottom: 4px;
+}
+
+.detail-stat-value {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.detail-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.detail-info-item {
+  background-color: #0f0f2d;
+  border: 1px solid #1e1e4a;
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.detail-info-label {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin-bottom: 6px;
+}
+
+.detail-info-value {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #cbd5e1;
+}
+
+/* Fronteras */
+.detail-borders {
+  background-color: #0f0f2d;
+  border: 1px solid #1e1e4a;
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.detail-borders-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #94a3b8;
+  margin-bottom: 14px;
+}
+
+.detail-borders-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.detail-border-btn {
+  background-color: #1e1e4a;
+  border: 1px solid #2e2e6a;
+  color: #cbd5e1;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.detail-border-btn:hover {
+  background-color: #7c6af7;
+  border-color: #7c6af7;
+  color: #ffffff;
+}

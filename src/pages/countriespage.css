@@ -1,0 +1,189 @@
+.countries-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Controles: buscador y filtros */
+.countries-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.countries-search-wrapper {
+  position: relative;
+  max-width: 420px;
+}
+
+.countries-search-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  pointer-events: none;
+}
+
+.countries-search {
+  width: 100%;
+  padding: 12px 40px 12px 42px;
+  background-color: #0f0f2d;
+  border: 1px solid #1e1e4a;
+  border-radius: 12px;
+  color: #ffffff;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.countries-search:focus {
+  border-color: #7c6af7;
+}
+
+.countries-search::placeholder {
+  color: #475569;
+}
+
+.countries-search-clear {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #64748b;
+  cursor: pointer;
+  font-size: 0.85rem;
+  padding: 4px;
+  border-radius: 4px;
+  transition: color 0.2s;
+}
+
+.countries-search-clear:hover {
+  color: #ffffff;
+}
+
+/* Filtros por región */
+.countries-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.countries-filter-btn {
+  padding: 7px 16px;
+  border-radius: 20px;
+  border: 1px solid #1e1e4a;
+  background: transparent;
+  color: #94a3b8;
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.countries-filter-btn:hover {
+  border-color: #7c6af7;
+  color: #ffffff;
+}
+
+.countries-filter-btn.active {
+  background-color: #7c6af7;
+  border-color: #7c6af7;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Contador */
+.countries-count {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.countries-count strong {
+  color: #7c6af7;
+}
+
+/* Grid de países */
+.countries-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+/* Card de país */
+.country-card {
+  background-color: #0f0f2d;
+  border: 1px solid #1e1e4a;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: default;
+}
+
+.country-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.country-card-flag {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid #1e1e4a;
+}
+
+.country-card-body {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.country-card-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.country-card-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.country-card-label {
+  font-size: 0.75rem;
+  color: #475569;
+}
+
+.country-card-value {
+  font-size: 0.78rem;
+  color: #cbd5e1;
+  font-weight: 500;
+  text-align: right;
+}
+
+.country-card-region {
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+/* Estado vacío */
+.countries-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 48px;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.countries-empty strong {
+  color: #94a3b8;
+}

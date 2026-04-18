@@ -1,0 +1,99 @@
+.population-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Stats generales */
+.pop-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 1000px) {
+  .pop-stats-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+.pop-stat-card {
+  background-color: #0f0f2d;
+  border: 1px solid #1e1e4a;
+  border-radius: 16px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.pop-stat-label {
+  font-size: 0.78rem;
+  color: #64748b;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.pop-stat-value {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #7c6af7;
+  line-height: 1.1;
+}
+
+.pop-stat-name {
+  font-size: 1.1rem;
+}
+
+.pop-stat-sub {
+  font-size: 0.75rem;
+  color: #475569;
+}
+
+/* Gráficos */
+.pop-chart-card {
+  background-color: #0f0f2d;
+  border: 1px solid #1e1e4a;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+/* Barras de región */
+.pop-regions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.pop-region-row {
+  display: grid;
+  grid-template-columns: 100px 1fr 60px;
+  align-items: center;
+  gap: 16px;
+}
+
+.pop-region-name {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  font-weight: 600;
+}
+
+.pop-region-bar-wrapper {
+  background-color: #1e1e4a;
+  border-radius: 20px;
+  height: 10px;
+  overflow: hidden;
+}
+
+.pop-region-bar {
+  height: 100%;
+  border-radius: 20px;
+  transition: width 0.6s ease;
+}
+
+.pop-region-value {
+  font-size: 0.85rem;
+  color: #cbd5e1;
+  font-weight: 700;
+  text-align: right;
+}

@@ -1,0 +1,77 @@
+.countries-table-wrapper {
+  overflow-x: auto;
+}
+
+.countries-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.countries-table thead tr {
+  border-bottom: 1px solid #1e1e4a;
+}
+
+.countries-table th {
+  text-align: left;
+  padding: 10px 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.countries-table-row {
+  border-bottom: 1px solid #1a1a3a;
+  transition: background-color 0.15s ease;
+}
+
+.countries-table-row:last-child {
+  border-bottom: none;
+}
+
+.countries-table-row:hover {
+  background-color: #1a1a3a;
+}
+
+.countries-table td {
+  padding: 12px;
+  color: #cbd5e1;
+}
+
+.country-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.country-flag {
+  width: 28px;
+  height: 20px;
+  border-radius: 3px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.country-region-badge {
+  background-color: color-mix(in srgb, var(--region-color) 15%, transparent);
+  color: var(--region-color);
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.country-population {
+  font-weight: 600;
+  color: #38bdf8;
+}
+
+.country-gdp {
+  font-weight: 600;
+  color: #4ade80;
+}

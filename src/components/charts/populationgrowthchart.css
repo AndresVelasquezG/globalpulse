@@ -1,0 +1,25 @@
+.growth-tooltip {
+  background-color: #1e1e4a;
+  border: 1px solid #2e2e6a;
+  border-radius: 10px;
+  padding: 12px 16px;
+}
+
+.growth-tooltip-year {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.growth-tooltip-value {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #38bdf8;
+}
+
+.growth-tooltip-value span {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #64748b;
+}

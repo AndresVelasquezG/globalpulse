@@ -1,0 +1,173 @@
+.climate-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Stats */
+.climate-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 1000px) {
+  .climate-stats-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+.climate-stat-card {
+  background-color: #0f0f2d;
+  border: 1px solid #1e1e4a;
+  border-radius: 16px;
+  padding: 22px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: transform 0.2s ease;
+}
+
+.climate-stat-card:hover {
+  transform: translateY(-3px);
+}
+
+.climate-stat-icon {
+  font-size: 2rem;
+  background-color: color-mix(in srgb, var(--eco-color) 15%, transparent);
+  border-radius: 12px;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.climate-stat-label {
+  font-size: 0.75rem;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.climate-stat-value {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--eco-color);
+  line-height: 1.1;
+}
+
+.climate-stat-sub {
+  font-size: 0.78rem;
+  color: #475569;
+  margin-top: 2px;
+}
+
+/* Gráfico */
+.climate-chart-card {
+  background-color: #0f0f2d;
+  border: 1px solid #1e1e4a;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.climate-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid #1e1e4a;
+  font-size: 0.78rem;
+}
+
+/* Tooltip */
+.climate-tooltip {
+  background-color: #1e1e4a;
+  border: 1px solid #2e2e6a;
+  border-radius: 10px;
+  padding: 12px 16px;
+}
+
+.climate-tooltip-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.climate-tooltip-value {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #fb923c;
+}
+
+/* Grid de ciudades */
+.climate-cities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.climate-city-card {
+  background-color: #0f0f2d;
+  border: 1px solid #1e1e4a;
+  border-radius: 14px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.climate-city-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.climate-city-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.climate-city-flag {
+  font-size: 1.6rem;
+  flex-shrink: 0;
+}
+
+.climate-city-name {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.climate-city-country {
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.climate-city-icon {
+  font-size: 1.4rem;
+  margin-left: auto;
+}
+
+.climate-city-temp {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.climate-city-details {
+  display: flex;
+  gap: 12px;
+  font-size: 0.78rem;
+  color: #64748b;
+}
+
+.climate-city-label {
+  font-size: 0.78rem;
+  color: #475569;
+  font-style: italic;
+}
